@@ -232,10 +232,28 @@ src/
 npm run start:dev
 ```
 
----
+## Option 1: Web Interface (Recommended)
 
-## Run CLI
+1. Start the backend server: `npm run start:dev`
+2. Open your browser and go to: `http://localhost:4000`
+3. Start chatting with your AI assistant!
+
+The web interface provides:
+- Clean, modern chat interface
+- Real-time responses
+- Error handling
+- Responsive design
+
+## Option 2: CLI
 
 ```
 npm run cli
 ```
+
+---
+
+## 📡 API Endpoints
+
+- `GET /` - Web interface
+- `GET /api` - API information and status
+- `GET /chat?q=your_query` - Chat with the AI assistant

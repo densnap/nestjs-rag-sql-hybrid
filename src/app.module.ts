@@ -6,6 +6,7 @@ import { OrdersModule } from './modules/orders/orders.module';
 import { SupabaseModule } from './common/supabase/supabase.module';
 
 // AI LAYER
+import { AppController } from './app.controller';
 import { QueryController } from './controller/query.controller';
 import { QueryOrchestratorService } from './orchestrator/query-orchestrator.service';
 
@@ -27,6 +28,7 @@ import { LlmService } from './llm/llm.service';
   ],
 
   controllers: [
+    AppController,
     QueryController, // 👈 AI endpoint added globally
   ],
 

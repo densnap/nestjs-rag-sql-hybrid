@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid RAG + SQL Assistant</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Hybrid RAG + SQL Assistant</h1>
+            <p>A proof-of-concept AI assistant combining vector search and SQL queries</p>
+        </header>
+
+        <div class="chat-container">
+            <div id="chat-messages" class="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <strong>Assistant:</strong> Hello! I'm your AI assistant. I can help you with queries about shops, orders, and general knowledge. What would you like to know?
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <input
+                    type="text"
+                    id="user-input"
+                    placeholder="Ask me anything about shops, orders, or general questions..."
+                    onkeypress="handleKeyPress(event)"
+                >
+                <button onclick="sendMessage()" id="send-button">Send</button>
+            </div>
+        </div>
+
+        <div class="status">
+            <span id="status">Ready</span>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
